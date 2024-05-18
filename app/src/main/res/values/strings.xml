@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hello Games</string>
+    <string name="mainActivityTitle">Hello Lists</string>
+    <string name="game_list_icon_desc">Shows the icon for the game</string>
+    <string name="games_info_activity_name_static">Name:</string>
+    <string name="games_info_activity_type_static">Type:</string>
+    <string name="games_info_activity_nbplayers_static">Nb players:</string>
+    <string name="games_info_activity_year_static">Year:</string>
+    <string name="games_info_know_more_button">DO YOU WANT TO KNOW MORE ?</string>
+    <string name="myname">An application by Xianqing</string>
+    <string name="loginas">login as:</string>
+    <string name="login">Login</string>
+    <string name="made">Made at</string>
+    <string name="plus">+</string>
+    <string name="Hello">Hello</string>
+    <string name="hereis">here is your todolist for today:</string>
+    <string name="describe">Please describe the task you have to do.</string>
+    <string name="dele">Del</string>
+    <string name="val">Validate</string>
+    <string name="item">items in total</string>
+    <string name="Todo2">My GameList</string>
+</resources>
