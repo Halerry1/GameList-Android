@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/games_info_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameInfoActivity">
+
+    <View
+        android:id="@+id/gamesInfoActivityTitleContainerView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@color/games_info_title_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameInfoActivityTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gamesInfoActivityTitleContainerView"
+        app:layout_constraintStart_toStartOf="@+id/gamesInfoActivityTitleContainerView"
+        app:layout_constraintTop_toTopOf="@+id/gamesInfoActivityTitleContainerView" />
+
+    <TextView
+        android:id="@+id/gamesInfoActivityTextHeadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/games_info_heading_text_color"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamesInfoActivityTitleContainerView"
+        tools:ignore="TextContrastCheck"
+        tools:text="Games Info" />
+
+    <ImageView
+        android:id="@+id/gameInfoActivityGameImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/game_list_icon_desc"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:srcCompat="@drawable/sudoko_game_icon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="573dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="329dp" />
+
+    <TextView
+        android:id="@+id/gamesInfoNameStaticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/games_info_activity_name_static"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/gameInfoActivityGameImageView"
+        app:layout_constraintTop_toTopOf="@+id/gameInfoActivityGameImageView" />
+
+    <TextView
+        android:id="@+id/gamesInfoNbplayersDynamicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesInfoNbplayersStaticTextView"
+        app:layout_constraintStart_toEndOf="@+id/gamesInfoNbplayersStaticTextView"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/gamesInfoTypeDynamicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesInfoTypeStaticTextView"
+        app:layout_constraintStart_toEndOf="@+id/gamesInfoTypeStaticTextView"
+        tools:text="Mathematical" />
+
+    <TextView
+        android:id="@+id/gamesInfoYearDynamicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesInfoYearStaticTextView"
+        app:layout_constraintStart_toEndOf="@+id/gamesInfoYearStaticTextView"
+        tools:text="1895" />
+
+    <TextView
+        android:id="@+id/gamesInfoYearStaticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/games_info_activity_year_static"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gamesInfoNbplayersStaticTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gamesInfoNbplayersStaticTextView" />
+
+    <TextView
+        android:id="@+id/gamesInfoNameDynamicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesInfoNameStaticTextView"
+        app:layout_constraintStart_toEndOf="@+id/gamesInfoNameStaticTextView"
+        tools:text="Sudoku" />
+
+    <TextView
+        android:id="@+id/gamesInfoNbplayersStaticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/games_info_activity_nbplayers_static"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gamesInfoTypeStaticTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gamesInfoTypeStaticTextView" />
+
+    <TextView
+        android:id="@+id/gamesInfoTypeStaticTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/games_info_activity_type_static"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gamesInfoNameStaticTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gamesInfoNameStaticTextView" />
+
+    <TextView
+        android:id="@+id/gameInfoActivityGameDescTextView"
+        android:layout_width="377dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/grey"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:ignore="TextSizeCheck,TextContrastCheck"
+        tools:text="Sudoku is a logic-based, combinatorial number-placement puzzle The objective is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids that compose the grid contains all ot the digits trom 1 to 9." />
+
+    <Button
+        android:id="@+id/gameInfoActivityMoreInfoButton"
+        style="@style/Widget.AppCompat.Button"
+        app:backgroundTint="@color/grey_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/games_info_know_more_button"
+        android:textColor="@color/black"
+        android:textColorLink="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameInfoActivityGameDescTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
